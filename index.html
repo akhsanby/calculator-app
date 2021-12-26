@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgpage: "#3b4664",
+              inputbg: "#181f32",
+              cardbg: "#252d44",
+              btnbg: "#eae3db",
+              shadowbtn: "#b2a499",
+              numberbtn: "#495062",
+              btndel: "#647299",
+              shadowbtndel: "#414e71",
+              btnreset: "#647299",
+              shadowbtnreset: "#414e71",
+              btnequal: "#d13f30",
+              shadowbtnequal: "#8f2316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-bgpage flex h-screen">
+    <div class="m-auto bg-transparent w-72 h-auto">
+      <div>
+        <p class="text-white font-bold">Calculator</p>
+      </div>
+      <!-- input form -->
+      <div
+        class="
+          mb-4
+          bg-inputbg
+          w-full
+          py-3
+          px-5
+          rounded-lg
+          text-right text-white
+          font-bold
+        "
+      >
+        <div id="previous-display" class="text-sm"></div>
+        <div id="current-display" class="text-2xl"></div>
+      </div>
+      <div class="bg-cardbg grid grid-cols-4 rounded-lg p-4 gap-3">
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          7
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          8
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          9
+        </button>
+        <button
+          data-delete
+          class="bg-btndel text-white text-xs font-bold py-1 rounded-lg"
+        >
+          DEL
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          4
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          5
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          6
+        </button>
+        <button
+          data-operator
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          +
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          1
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          2
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          3
+        </button>
+        <button
+          data-operator
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          -
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          .
+        </button>
+        <button
+          data-number
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          0
+        </button>
+        <button
+          data-operator
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          /
+        </button>
+        <button
+          data-operator
+          class="bg-btnbg text-numberbtn font-bold py-1 rounded-lg"
+        >
+          x
+        </button>
+        <button
+          data-reset
+          class="
+            col-span-2
+            bg-btnreset
+            text-white text-xs
+            font-bold
+            py-1
+            rounded-lg
+          "
+        >
+          RESET
+        </button>
+        <button
+          data-equal
+          class="col-span-2 bg-btnequal text-white font-bold py-1 rounded-lg"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
