@@ -2,4 +2,4 @@
 
 challenge from Frontend Mentor https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29
 
-![Calculator App](/public/screenshot/image.png "Calculator App")
+![Calculator App](/image/image.png "Calculator App")
